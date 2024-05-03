@@ -163,7 +163,7 @@
 		(property ki_fp_filters "*Fuse*")
 		(path "/6278b35a-88da-4c94-9833-bbdf2ad00d2d")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 13.06 -1.77)
@@ -445,7 +445,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/3275ced6-4ef9-46a2-a6f1-aed94fce98aa")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.89 0.92)
@@ -743,7 +743,7 @@
 		(property ki_fp_filters "D*DO?201AD*")
 		(path "/627e9a4c-c6d9-41fc-a3c8-6953b6e2aa0f")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 12.49 -2.72)
@@ -1099,7 +1099,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/12154d4a-aff2-4667-a9ee-90253310cddf")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
 			(start -1.9 1.78)
@@ -1342,7 +1342,7 @@
 		(property ki_fp_filters "D*DO?201AD*")
 		(path "/d67062ea-f6c5-4add-9ebb-98bcb390ffb4")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 12.49 -2.72)
@@ -1698,7 +1698,7 @@
 		(property ki_fp_filters "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*")
 		(path "/518fb889-1fb0-44e0-9d7a-2bfde1941f5d")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_arc
 			(start 0.320095 0.749359)
@@ -1882,7 +1882,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/addccc69-5617-4569-8cb9-29d25d88d84a")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.04 0)
@@ -2238,7 +2238,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8c7ae91a-3c7b-4270-b1a4-e35d1348eedc")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_line
 			(start -1.9 -1.78)
@@ -2393,7 +2393,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/3f991a87-cfac-4a56-a877-50faac9cdb51")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.89 0.92)
@@ -2665,7 +2665,7 @@
 		(property ki_fp_filters "TO?220*")
 		(path "/53af0575-9ed0-4810-a689-bd53d26405b8")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 7.66 -3.27)
@@ -2970,7 +2970,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/0f5375c5-9eee-4343-9df4-d69072d93444")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.89 0.92)
@@ -3242,7 +3242,7 @@
 		(property ki_fp_filters "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*")
 		(path "/b1394899-cda6-4d88-835c-775346d54562")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_arc
 			(start 0.320095 0.749359)
@@ -3426,7 +3426,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/07f9802f-11a3-408b-8fb4-2f9cfcddf727")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 6.58 0)
@@ -3782,7 +3782,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/65cfbec6-b6c1-4e45-9745-2d5e2024085d")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.89 0.92)
@@ -4054,7 +4054,7 @@
 		(property ki_fp_filters "TO?220*")
 		(path "/c8fba37a-ac28-4f58-9668-3225749a3ff2")
 		(sheetname "Root")
-		(sheetfile "Moped_Voltage_Regulator.kicad_sch")
+		(sheetfile "Moped_Voltage_Regulator_ThroughHole.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 7.66 -3.27)

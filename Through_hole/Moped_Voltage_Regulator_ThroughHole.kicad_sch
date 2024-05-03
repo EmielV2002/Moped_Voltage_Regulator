@@ -2117,7 +2117,7 @@
 			(uuid "d0d48569-824e-4232-bd44-14ae8691bacb")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "D1")
 					(unit 1)
@@ -2187,7 +2187,7 @@
 			(uuid "56599e9a-a7da-46e2-b2ce-53221918d592")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "R1")
 					(unit 1)
@@ -2256,7 +2256,7 @@
 			(uuid "80e3b05a-0170-4e68-8bbd-d39e61aa554f")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "J1")
 					(unit 1)
@@ -2326,7 +2326,7 @@
 			(uuid "a8df6b4f-c7b0-47d6-9037-96a39a60ae35")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "R2")
 					(unit 1)
@@ -2397,7 +2397,7 @@
 			(uuid "809686ee-cdac-4ff2-b8b2-7f1af1b7eee6")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "R4")
 					(unit 1)
@@ -2467,7 +2467,7 @@
 			(uuid "23104225-4e69-4cf1-8990-fc6f80cda308")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "TH1")
 					(unit 1)
@@ -2543,7 +2543,7 @@
 			(uuid "5ff9fe71-74ab-4fd9-9343-e98c917629ea")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "Q1")
 					(unit 1)
@@ -2611,7 +2611,7 @@
 			(uuid "6b60f7ba-aa82-4b75-aba5-5861be5c6458")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "F1")
 					(unit 1)
@@ -2699,7 +2699,7 @@
 			(uuid "9731d05b-f6b3-49b1-a513-3d2d5f4d0011")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "D2")
 					(unit 1)
@@ -2770,7 +2770,7 @@
 			(uuid "7e7b08a2-cfa5-4522-9b69-26028245e3c4")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "R3")
 					(unit 1)
@@ -2836,7 +2836,7 @@
 			(uuid "61222246-e6bf-497f-9da1-c7aa4e5b0247")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "#PWR02")
 					(unit 1)
@@ -2903,7 +2903,7 @@
 			(uuid "8ea82bc8-70d0-4a3a-9c0c-2cd40d9b3eaf")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "J2")
 					(unit 1)
@@ -2974,7 +2974,7 @@
 			(uuid "4e28befa-9933-4bec-9f15-ec28b553fbbe")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "D4")
 					(unit 1)
@@ -3044,7 +3044,7 @@
 			(uuid "b684a220-b296-434a-9090-378733b5d497")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "TH2")
 					(unit 1)
@@ -3119,7 +3119,7 @@
 			(uuid "8fef854e-d734-466e-9c44-8d03e74f8d25")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "Q2")
 					(unit 1)
@@ -3207,7 +3207,7 @@
 			(uuid "ccf96a2a-1381-47de-872a-f219c8c699f2")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "D3")
 					(unit 1)
@@ -3273,7 +3273,7 @@
 			(uuid "5e5a1324-872c-4a64-836b-f46b2b4d04af")
 		)
 		(instances
-			(project "Moped_Voltage_Regulator"
+			(project "Moped_Voltage_Regulator_ThroughHole"
 				(path "/cd224f18-4e7a-486b-b9a3-5d1abd3b9fbb"
 					(reference "#PWR01")
 					(unit 1)

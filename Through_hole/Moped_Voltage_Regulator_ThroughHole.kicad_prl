@@ -74,13 +74,13 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Moped_Voltage_Regulator.kicad_prl",
+    "filename": "Moped_Voltage_Regulator_ThroughHole.kicad_prl",
     "version": 3
   },
   "project": {
     "files": [
       {
-        "name": "Moped_Voltage_Regulator.kicad_sch",
+        "name": "Moped_Voltage_Regulator_ThroughHole.kicad_sch",
         "open": false,
         "window": {
           "display": 1,
@@ -92,7 +92,7 @@
         }
       },
       {
-        "name": "Moped_Voltage_Regulator.kicad_pcb",
+        "name": "Moped_Voltage_Regulator_ThroughHole.kicad_pcb",
         "open": false,
         "window": {
           "display": 1,
