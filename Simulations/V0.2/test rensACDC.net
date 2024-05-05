@@ -1,0 +1,18 @@
+* C:\Users\emiel\Downloads\rens\test rensACDC.wxsch
+*#SIMETRIX
+V1 V1_P 0  AC 1 0 Sin(0 8.48528 210 0 0)
+R1 D2_N Q2_B 560
+R2 Q2_E 0 1K
+X$D1 0 Q2_B BZX79-4V3 pinnames: P N
+D2 V1_P D2_N D1N4148
+Q2 D2_N Q2_B Q2_E 0 TIP30B
+C1 Q2_B 0 100u   
+C2 Q2_E 0 100u   
+.GRAPH Q2_E curveLabel= Q1-emitter nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="de1a02eb-62bd-4df2-9527-f4fd0622cd79" disabled=false PROBEREF=Probe1  
+.GRAPH V1_P curveLabel= Q1-collector nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="402bbd5f-b850-4124-bbc5-44691b724632" disabled=false PROBEREF=Probe2  
+.GRAPH D2_N curveLabel= Q2-collector nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="a256ebfd-1ca5-4e7e-b55d-01175a61a226" disabled=false PROBEREF=Probe3  
+.tran 0 1m rtnstep=1u rtnMode=0
+*.ac dec 25 1k 1000000
+*.noise freq dec 25 1k 1000000 V=??? VN=0
+*.tf freq dec 25 1k 1000000 V=??? VN=0
+

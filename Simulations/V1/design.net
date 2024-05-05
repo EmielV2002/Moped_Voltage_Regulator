@@ -1,0 +1,21 @@
+* C:\Users\emiel\Downloads\rens\zundapp ACDC regulator.wxsch
+*#SIMETRIX
+V1 V1_P 0  AC 1 0 Sin(0 8.48528 210 0 0)
+R1 D2_N Q2_B 560
+R2 R2_P 0 1k
+X$D1 0 Q2_B BZX79-3V9 pinnames: P N
+D2 V1_P D2_N D1N4148
+Q2 Q2_C Q2_B D2_N 0 TIP30B
+C1 Q2_B 0 470u   
+C2 Q2_C 0 680u   
+C3 Q2_C 0 100u   
+V$IPROBE1 Q2_C R2_P 0.0 
+.GRAPH IPROBE1#p CurveLabel=IPROBE1 analysis=tran|ac|dc GUID="0adcc4b7-ac4b-4aae-93b5-7ca53e537d58" disabled=false 
+.GRAPH R2_P curveLabel= Q1-emitter nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="de1a02eb-62bd-4df2-9527-f4fd0622cd79" disabled=false PROBEREF=Probe1  
+.GRAPH V1_P curveLabel= V1-pos nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="609ac099-6045-47db-84af-9af3b3b63add" disabled=false PROBEREF=Probe2  
+.GRAPH D2_N curveLabel= Q2-collector nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="a256ebfd-1ca5-4e7e-b55d-01175a61a226" disabled=false PROBEREF=Probe3  
+.tran 0 1m rtnstep=1u rtnMode=0
+*.ac dec 25 1k 1000000
+*.noise freq dec 25 1k 1000000 V=??? VN=0
+*.tf freq dec 25 1k 1000000 V=??? VN=0
+

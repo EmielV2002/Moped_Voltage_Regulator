@@ -1,0 +1,204 @@
+*******************************************************************************************
+***                                                                                     ***
+*** EE-Sim OASIS Simulator Version 9.10l (x64) - 2-5-2024 19:32                         ***
+*** Platform: Windows 10                                                                ***
+*** Architecture: x64                                                                   ***
+*** Serial Number:                                                                      ***
+*** User:                                                                               ***
+***                                                                                     ***
+*** TITLE:   * C:\Users\emiel\Downloads\rens\V2\EV_zundapp AC regulator_aangepast.sxsch***
+*** NETLIST: C:\Users\emiel\Downloads\rens\V2\design.net                                ***
+***                                                                                     ***
+*******************************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+.options bjtPSpiceSubNode=1
+.options allowdivzero=1
+.options initCondMode=2
+.options icres=0.002
+.options inhibitAttoISource=1
+#SIMETRIX
+R1 R1_P 0 2.4
+R2 S1_N 0 7.2
+R3 R1_P 0 18
+R4 I1_N 0 9
+R5 R5_P R5_N 1K
+R6 R11_N Q2_G 1K
+R7 D1_P R5_P 120
+X$D1 D1_P I1_N BZX79-3V6 pinnames: P N
+R8 Q2_G R8_N 120
+D2 I1_N D2_N D1n5406
+R9 R5_N 0 47
+X$D3 R8_N 0 BZX79-3V6 pinnames: P N
+D4 0 Q2_D D1n5406
+R11 I1_N R11_N 47
+X$S1 R1_P S1_N R1_P 0 gen_switch : RON=100m ROFF=1Meg VON=50 VOFF=500m pinnames: P N CP CN
+X$Q1 D2_N R5_P 0 IRFZ44N pinnames: D G S
+X$Q2 Q2_D Q2_G I1_N IRFZ44N pinnames: D G S
+I1 0 I1_N  Sin(0 5.4 100 0 0)
+V$IPROBE1 I1_N R1_P 0.0 
+.GRAPH IPROBE1#p CurveLabel=IPROBE1 analysis=tran|ac|dc GUID="cec4a433-308f-482d-8175-02cc2de5b5fe" disabled=false 
+.GRAPH I1_N curveLabel= S1-P nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="b40bf182-73d0-435c-bb64-a9bdea2f328b" disabled=false PROBEREF=Probe1  
+.GRAPH "power(D2_N,Q1#D,0)+power(R5_P,Q1#G,0)" curveLabel="Power(Q1)" nowarn=true disabled=false GUID="ccd43176-0803-4608-8188-a07d2814c31b" 
+.GRAPH "power(Q2_D,Q2#D,0)+power(Q2_G,Q2#G,0)+power(I1_N,Q2#S,0)" curveLabel="Power(Q2)" nowarn=true disabled=false GUID="397706a5-c4e1-4ce7-8b1e-a62fd9d218e7" 
+.tran 0 20m rtnstep=20u rtnstop=1m rtnMode=0
+*.ac dec 25 1k 1000000
+*.noise freq dec 25 1k 1000000 V=??? VN=0
+*.tf freq dec 25 1k 1000000 V=??? VN=0
+.subckt IRFZ44N D G S
+.model mosfet NMOS( LEVEL=17 VTO=3.537 RS=0.01997 KP=45.41 RD=-0.0058 TC1RD=-0.0207 RG=21.604 IS=1e-36 LIMIT(VDS)=(*, 55)
++ CGDMAX=2.50E-09 CGDMIN=1.20E-10 XG2CGD=0.4 XG1CGD=0.1 CBD=2.86E-10 VTCGD=1)
+.model diode D( IS=5.90e-13 RS=0.0097 TT=6.554e-08)
+M1 D G S S mosfet
+D1 S D Diode
+Cgs G S 1.24E-09
+.ends
+.subckt gen_switch 1 2 3 4
+S1 1 2 3 4 SW 
+.model SW VSWITCH RON={ron} ROFF={roff} VON={von} VOFF={voff} GIN=0
+.ends 
+********************************************************************************
+**
+** Timed switch - this is a comprehensive model with all features.
+** Uses new built-in timed switch model. Needs v8+. 
+**
+********************************************************************************
+.subckt BZX79-3V6 1 2
+D1 1 2 D1
+D2 2 3 D2
+I1 1 3 0.80803
+R1 1 3 3.5 TC1=-0.8486m
+.model D1 D IS=9.19e-16 CJO=450p RS=0.57061 ISR=8.26e-08
+.model D2 D IS=1.00e-15
+.ends
+.model D1n5406  D(IS=15f RS=8m CJO=150p M=0.3 VJ=0.75 ISR=120n 
++ BV=800 Ibv=100u)
+
+********************************************************************************
+***                                                                          ***
+*** Starting Transient analysis at 19:32                                     ***
+***                                                                          ***
+*** Analysis card: .tran 0 20m rtnstep=20u rtnstop=1m rtnMode=0              ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-12
+VNTOL                     1e-06
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-12
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+Model parameters for devices of type Switch
+===========================================
+Model:       S1.SW        
+
+gin          0            
+roff         1Meg         
+ron          100m         
+voff         500m         
+von          50           
+
+
+Model parameters for devices of type VMOS
+=========================================
+Model:       Q1.mosfet    Q2.mosfet    
+
+cbd          286p         286p         
+cgdmax       2.5n         2.5n         
+cgdmin       120p         120p         
+is           1E-36        1E-36        
+kp           45.41        45.41        
+rd           -5.8m        -5.8m        
+rg           21.604       21.604       
+rs           19.97m       19.97m       
+tc1rd        -20.7m       -20.7m       
+vtcgd        1            1            
+vto          3.537        3.537        
+xg1cgd       100m         100m         
+xg2cgd       400m         400m         
+
+
+Model parameters for devices of type Diode
+==========================================
+Model:       D1.D1        D1.D2        D1n5406      D3.D1        D3.D2        
+
+_ibv         100p         100p         100u         100p         100p         
+bv           0            0            800          0            0            
+cjo          450p         0            150p         450p         0            
+is           919a         1f           15f          919a         1f           
+isr          82.6n        0            120n         82.6n        0            
+m            500m         500m         300m         500m         500m         
+rs           570.61m      0            8m           570.61m      0            
+tt           0            0            0            0            0            
+vj           1            1            750m         1            1            
+
+Model:       Q1.Diode     Q2.Diode     
+
+_ibv         100p         100p         
+bv           0            0            
+cjo          0            0            
+is           590f         590f         
+isr          0            0            
+m            500m         500m         
+rs           9.7m         9.7m         
+tt           65.54n       65.54n       
+vj           1            1            
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 1322
+Transient iterations = 1301
+Transient timepoints = 406
+Accepted timepoints = 363
+Total analysis time = 0.062
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0.016
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 21
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = 13
+Number of initial matrix elements = 93
+Circuit equations = 27
+State vector size = 106
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0
+Total run time = 0.266 seconds
+Analysis concluded 2-5-2024 19:32

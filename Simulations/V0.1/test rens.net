@@ -1,0 +1,14 @@
+* C:\Users\emiel\Downloads\test rens.wxsch
+*#SIMETRIX
+V1 V1_P V1_N  AC 1 0 Sin(0 1 50 0 0)
+R1 Q1_B R1_N 100k
+R2 Q1_E R1_N 1K
+X$D1 Q1_B D3_N BZX79-4V7 pinnames: P N
+D2 R1_N V1_P D1N4148
+D3 V1_P D3_N D1N4148
+D4 R1_N V1_N D1N4148
+D5 V1_N D3_N D1N4148
+Q1 D3_N Q1_B Q1_E 0 TIP33
+.GRAPH Q1_E curveLabel= Q1-emitter nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="26164579-0d00-4e04-9a5d-0b95b4ef7699" disabled=false PROBEREF=Probe1  
+.GRAPH V1_P curveLabel= D3-anode nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="78c80ed1-5ae5-4ed3-8888-80eec3253e50" disabled=false PROBEREF=Probe2  
+.GRAPH Q1_B curveLabel= Q1-base nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="1118b472-fa62-40cf-bdbe-fcf88316e6b0" disabled=false PROBEREF=Probe3  

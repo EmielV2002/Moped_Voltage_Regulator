@@ -1,0 +1,174 @@
+********************************************************************************
+***                                                                          ***
+*** EE-Sim OASIS Simulator Version 9.10l (x64) - 14-4-2024 18:53             ***
+*** Platform: Windows 10                                                     ***
+*** Architecture: x64                                                        ***
+*** Serial Number:                                                           ***
+*** User:                                                                    ***
+***                                                                          ***
+*** TITLE:   * C:\Users\emiel\Downloads\rens\test rensACDC.wxsch            ***
+*** NETLIST: C:\Users\emiel\Downloads\rens\test rensACDC.net                 ***
+***                                                                          ***
+********************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+.options bjtPSpiceSubNode=1
+.options allowdivzero=1
+.options initCondMode=2
+.options icres=0.002
+.options inhibitAttoISource=1
+#SIMETRIX
+V1 V1_P 0  AC 1 0 Sin(0 8.48528 210 0 0)
+R1 D2_N Q2_B 560
+R2 Q2_E 0 1K
+X$D1 0 Q2_B BZX79-4V3 pinnames: P N
+D2 V1_P D2_N D1N4148
+Q2 D2_N Q2_B Q2_E 0 TIP30B
+C1 Q2_B 0 100u   
+C2 Q2_E 0 100u   
+.GRAPH Q2_E curveLabel= Q1-emitter nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="de1a02eb-62bd-4df2-9527-f4fd0622cd79" disabled=false PROBEREF=Probe1  
+.GRAPH V1_P curveLabel= Q1-collector nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="402bbd5f-b850-4124-bbc5-44691b724632" disabled=false PROBEREF=Probe2  
+.GRAPH D2_N curveLabel= Q2-collector nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="a256ebfd-1ca5-4e7e-b55d-01175a61a226" disabled=false PROBEREF=Probe3  
+.tran 0 1m rtnstep=1u rtnMode=0
+*.ac dec 25 1k 1000000
+*.noise freq dec 25 1k 1000000 V=??? VN=0
+*.tf freq dec 25 1k 1000000 V=??? VN=0
+.subckt BZX79-4V3 1 2
+D1 1 2 D1
+D2 2 3 D2
+I1 1 3 1.00803
+R1 1 3 3.5 TC1=-0.7086m
+.model D1 D IS=9.19e-16 CJO=450p RS=0.57061 ISR=4.95e-08
+.model D2 D IS=1.00e-15
+.ends
+.model D1n4148 D(IS=1.6f RS=1.0 IKF=22m CJO=3p M=0.3 VJ=0.75 ISR=2.6n 
++ BV=70 TT=20n)
+**************************************************************************
+* jrw 17.2.94.
+* bav18, bav19, bav20, bav21 - DO-35
+* bas19, bas20, bas21 - SOT23
+* bav100, bav101, bav102, bav103 -SOD80C
+* Data from Philips SC01 1992
+.model TIP30B pnp ( IS=3.58E-13 VAF=100.0 BF=240 IKF=0.2889 NE=1.6245
++    ISE=2.032E-11 IKR=0.1 ISC=1.50E-08 NC=1.9 NR=1 BR=10 RC=0.05 CJC=3.00E-10
++    FC=0.5 MJC=0.45 VJC=0.75 CJE=3.15E-10 MJE=0.51 VJE=0.6 TF=2.30E-08
++    ITF=25 VTF=10 XTF=0.5 RE=0.12 TR=2.00E-07)
+* From Motorola DL111 Rev 5. FT from NS Discretes 1978
+
+********************************************************************************
+***                                                                          ***
+*** Starting Transient analysis at 18:53                                     ***
+***                                                                          ***
+*** Analysis card: .tran 0 1m rtnstep=1u rtnMode=0                           ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-12
+VNTOL                     1e-06
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-12
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+Model parameters for devices of type Diode
+==========================================
+Model:       D1.D1        D1.D2        D1N4148      
+
+bv           0            0            70           
+cjo          450p         0            3p           
+ikf          0            0            22m          
+is           919a         1f           1.6f         
+isr          49.5n        0            2.6n         
+m            500m         500m         300m         
+rs           570.61m      0            1            
+tt           0            0            20n          
+vj           1            1            750m         
+
+
+Model parameters for devices of type BJT
+========================================
+Model:       TIP30B       
+
+bf           240          
+br           10           
+cjc          300p         
+cje          315p         
+fc           500m         
+ikf          288.9m       
+ikr          100m         
+is           358f         
+isc          15n          
+ise          20.32p       
+itf          25           
+mjc          450m         
+mje          510m         
+nc           1.9          
+ne           1.6245       
+nr           1            
+rc           50m          
+re           120m         
+tf           23n          
+tr           200n         
+vaf          100          
+vjc          750m         
+vje          600m         
+vtf          10           
+xtf          500m         
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 2106
+Transient iterations = 2086
+Transient timepoints = 1044
+Accepted timepoints = 1043
+Total analysis time = 0.032
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 20
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = -3
+Number of initial matrix elements = 31
+Circuit equations = 11
+State vector size = 62
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0.047
+Total run time = 0.079 seconds
+Analysis concluded 14-4-2024 18:53

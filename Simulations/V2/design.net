@@ -1,0 +1,30 @@
+* C:\Users\emiel\Downloads\rens\V2\EV_zundapp AC regulator_aangepast.sxsch
+*#SIMETRIX
+R1 R1_P 0 2.4
+R2 S1_N 0 7.2
+R3 R1_P 0 18
+R4 I1_N 0 9
+R5 R5_P R5_N 1K
+R6 R11_N Q2_G 1K
+R7 D1_P R5_P 120
+X$D1 D1_P I1_N BZX79-3V6 pinnames: P N
+R8 Q2_G R8_N 120
+D2 I1_N D2_N D1n5406
+R9 R5_N 0 47
+X$D3 R8_N 0 BZX79-3V6 pinnames: P N
+D4 0 Q2_D D1n5406
+R11 I1_N R11_N 47
+X$S1 R1_P S1_N R1_P 0 gen_switch : RON=100m ROFF=1Meg VON=50 VOFF=500m pinnames: P N CP CN
+X$Q1 D2_N R5_P 0 IRFZ44N pinnames: D G S
+X$Q2 Q2_D Q2_G I1_N IRFZ44N pinnames: D G S
+I1 0 I1_N  Sin(0 5.4 100 0 0)
+V$IPROBE1 I1_N R1_P 0.0 
+.GRAPH IPROBE1#p CurveLabel=IPROBE1 analysis=tran|ac|dc GUID="cec4a433-308f-482d-8175-02cc2de5b5fe" disabled=false 
+.GRAPH I1_N curveLabel= S1-P nowarn=true ylog=auto xlog=auto analysis=tran|ac|dc GUID="b40bf182-73d0-435c-bb64-a9bdea2f328b" disabled=false PROBEREF=Probe1  
+.GRAPH "power(D2_N,Q1#D,0)+power(R5_P,Q1#G,0)" curveLabel="Power(Q1)" nowarn=true disabled=false GUID="ccd43176-0803-4608-8188-a07d2814c31b" 
+.GRAPH "power(Q2_D,Q2#D,0)+power(Q2_G,Q2#G,0)+power(I1_N,Q2#S,0)" curveLabel="Power(Q2)" nowarn=true disabled=false GUID="397706a5-c4e1-4ce7-8b1e-a62fd9d218e7" 
+.tran 0 20m rtnstep=20u rtnstop=1m rtnMode=0
+*.ac dec 25 1k 1000000
+*.noise freq dec 25 1k 1000000 V=??? VN=0
+*.tf freq dec 25 1k 1000000 V=??? VN=0
+
