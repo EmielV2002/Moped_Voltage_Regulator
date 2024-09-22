@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "dsf")(type "KiCad")(uri "C:/Users/emiel/Downloads/RP_Silicon_KiCad-main/KiCadLibraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+)

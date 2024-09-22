@@ -1,4 +1,4 @@
-23336750300313700
+23362003290890818
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -67298,6 +67298,13 @@ Mark board for extraction
 0
 0
 PCM_kikit
+Error
+Mark board for extraction
+
+0
+0
+0
+PCM_kikit
 Fiducial
 Circular Fiducial
 fiducial
@@ -87290,6 +87297,13 @@ Fuse
 2
 2
 SamacSys
+1704897
+1704897
+Connector
+0
+6
+6
+SamacSys
 ANTC5320X170N
 ANT5320LL04R2455A
 Antenna
@@ -87369,6 +87383,13 @@ Schottky Diode
 SamacSys
 DIOM5226X230N
 2-Pin SMA
+Diode
+0
+2
+2
+SamacSys
+DIOM5436X244N
+VS-3EGH06-M3/5BT
 Diode
 0
 2
@@ -87619,6 +87640,20 @@ Integrated Circuit
 15
 15
 SamacSys
+RJ116N4B
+RJ11-6N4-B-2
+Connector
+0
+8
+8
+SamacSys
+SFT40W65SF50N4652
+SFT-40-W65S-F50-N4652-5
+LED
+0
+3
+3
+SamacSys
 SHDRRA4W60P0X250_1X4_1170X750X510P
 1778641
 Connector
@@ -87794,6 +87829,13 @@ Integrated Circuit
 16
 16
 SamacSys
+SOP65P640X120-15N
+HTSSOP14
+Integrated Circuit
+0
+15
+15
+SamacSys
 SOP65P640X120-29N
 pwp(r-pdso-g28)
 Integrated Circuit
@@ -87881,6 +87923,13 @@ SamacSys
 SOTFL50P162X60-6N
 DMC2400UV
 Transistor
+0
+6
+6
+SamacSys
+TLL62BBSVB
+TLL-62BB-S-V-B-2
+Switch
 0
 6
 6
@@ -94738,6 +94787,13 @@ igbt diode module
 25
 25
 User
+Cap ~ 12.5, 2.54mm-10.5mm pitch
+CP, Radial series, Radial, pin pitch=7.50mm, , diameter=12.5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 7.50mm  diameter 12.5mm Electrolytic Capacitor
+0
+2
+2
+User
 Conn_1x16_FFC
 
 
@@ -94751,6 +94807,13 @@ Conn_1x20_FFC
 0
 20
 20
+User
+Crystal_SMD_HC49-US
+SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package
+SMD SMT crystal
+0
+2
+2
 User
 HAN_logo
 
@@ -94794,6 +94857,20 @@ NXP_logo_big
 0
 0
 User
+RP2040-QFN-56
+QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+70
+57
+User
+RPi_Pico_SMD_TH
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+86
+43
+User
 SMDLX0707RGBTR
 SMD-LX0707RGB-TR-3
 Integrated Circuit
@@ -94823,6 +94900,13 @@ easteregg
 0
 User
 easteregg_silk
+
+
+0
+0
+0
+User
+mandarij_proof_logo
 
 
 0
@@ -95612,3 +95696,24 @@ Varistor VF
 0
 2
 2
+dsf
+Crystal_SMD_HC49-US
+SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package
+SMD SMT crystal
+0
+2
+2
+dsf
+RP2040-QFN-56
+QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+70
+57
+dsf
+RPi_Pico_SMD_TH
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+86
+43
